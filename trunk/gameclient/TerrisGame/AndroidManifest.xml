@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.game.mini"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+        <activity android:name=".TerrisGameActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity android:name=".TerrisGame"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity android:name=".UpdateSpriteExample"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+                   
+        </activity>
+        
+        <activity android:name=".GameplaySceneActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name=".MenuSceneActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+                   
+        </activity>
+        
+        <activity android:name=".ResultSceneActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+        </activity>
+		 -->
+    </application>
+    
+    
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    
+</manifest>
