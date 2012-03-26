@@ -14,7 +14,7 @@ public class GamePlay {
 	public final static int PIECE_COL						= 5; //for logic
 	public final static int PIECE_NUM_TYPES					= 7;
 	public final static int PIECE_NUM_ROTATION				= 4;
-	public final static int PIECE_SQUARE_IDX				= 0;
+	public final static int PIECE_SQUARE_IDX				= 0; //first index in PIECE_COLLECTION array
 	public final static int PIECE_LONG_IDX					= PIECE_SQUARE_IDX + 1;
 	public final static int PIECE_L_IDX						= PIECE_LONG_IDX + 1;
 	public final static int PIECE_LMIRROR_IDX				= PIECE_L_IDX + 1;
