@@ -15,7 +15,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 
 import com.game.mini.common.CommonClass;
-import com.game.mini.object.EnumGameState;
+import com.game.mini.common.EnumGameState;
 import com.game.mini.object.GameHandler;
 
 public class TerrisGameActivity extends BaseGameActivity {

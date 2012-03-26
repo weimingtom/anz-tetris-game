@@ -11,7 +11,7 @@ import org.anddev.andengine.opengl.texture.region.TextureRegion;
 
 import com.game.mini.TerrisGameActivity;
 import com.game.mini.common.CommonClass;
-import com.game.mini.object.EnumGameState;
+import com.game.mini.common.EnumGameState;
 
 import android.app.Activity;
 import android.view.KeyEvent;

@@ -1,4 +1,4 @@
-package com.game.mini.object;
+package com.game.mini.common;
 
 public enum EnumGameState {
 	NULL_GAMESTATE,

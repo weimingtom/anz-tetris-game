@@ -4,6 +4,7 @@ import org.anddev.andengine.engine.Engine;
 import org.anddev.andengine.entity.scene.Scene;
 
 import com.game.mini.common.CommonClass;
+import com.game.mini.common.EnumGameState;
 import com.game.mini.gamestate.GameState;
 import com.game.mini.gamestate.LoadingGameState;
 import com.game.mini.gamestate.MenuGameState;
