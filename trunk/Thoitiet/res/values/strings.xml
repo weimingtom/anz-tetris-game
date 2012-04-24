@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ThoiTietActivity!</string>
+    <string name="app_name">ThoiTiet</string>
+    <string name="area">Khu vực</string>
+    <string name="update">Cập nhật</string>
+    
+    <!-- Pop up choose area header : pre - parea-->
+    <string name="parea_header">Chọn khu vực cần xem ...</string>
+
+</resources>
