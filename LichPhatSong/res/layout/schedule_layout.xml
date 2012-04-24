@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imgLblBackground"
+        android:layout_width="300dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/labelbackground" />
+
+    <TextView
+        android:id="@+id/tvLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="22dip"
+        android:text="Vui lòng chọn kênh" 
+        android:textColor="@color/white"
+        android:textSize="16dip"/>
+
+    <!-- Line 1 -->
+    <RelativeLayout 
+        android:layout_width="fill_parent" 
+		android:layout_height="50dip" 
+		android:id="@+id/line1"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="65dip">
+
+        <ImageView
+            android:id="@+id/imgStation1"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:scaleType="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:src="@drawable/vtv1" />
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="120dip"
+            android:text="VTV1" 
+            android:textColor="@color/white"
+            android:textSize="20dip"/>
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline">
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <!-- Line 2 -->
+
+    <RelativeLayout
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line1">
+
+        <ImageView
+            android:id="@+id/imgStation2"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:scaleType="center"
+            android:src="@drawable/vtv2" />
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dip"
+            android:text="VTV1"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- Line 3 -->
+
+    <RelativeLayout
+        android:id="@+id/line3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line2">
+
+        <ImageView
+            android:id="@+id/imgStation2"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:scaleType="center"
+            android:src="@drawable/vtv3" />
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dip"
+            android:text="VTV3"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <!-- Line 4 -->
+
+    <RelativeLayout
+        android:id="@+id/line4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line3">
+
+        <ImageView
+            android:id="@+id/imgStation2"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:scaleType="center"
+            android:src="@drawable/vtv4" />
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dip"
+            android:text="VTV4"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <!-- Line 5 -->
+
+    <RelativeLayout
+        android:id="@+id/line5"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line4">
+
+        <ImageView
+            android:id="@+id/imgStation2"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:scaleType="center"
+            android:src="@drawable/vtv6" />
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dip"
+            android:text="VTV6"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <!-- Line 6 -->
+
+    <RelativeLayout
+        android:id="@+id/line6"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line5">
+
+        <ImageView
+            android:id="@+id/imgStation2"
+            android:layout_width="80dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:scaleType="center"
+            android:src="@drawable/htv1" />
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dip"
+            android:text="HTV1"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <!-- Line 7 -->
+
+    <RelativeLayout
+        android:id="@+id/line7"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line6">
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dip"
+            android:text="Xem thêm ..."
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

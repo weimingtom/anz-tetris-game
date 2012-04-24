@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imgLblBackground"
+        android:layout_width="300dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/labelbackground" />
+
+    <TextView
+        android:id="@+id/tvStationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="22dip"
+        android:text="HTV7" 
+        android:textColor="@color/white"
+        android:textSize="16dip"/>
+    
+    <TextView
+        android:id="@+id/tvStationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="22dip"
+        android:text="24/11/2010" 
+        android:textColor="@color/date"
+        android:textSize="16dip"/>
+
+    <!-- Line 1 -->
+    <RelativeLayout 
+        android:layout_width="fill_parent" 
+		android:layout_height="48dip" 
+		android:id="@+id/line1"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="65dip">
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="10dip"
+            android:text="06:00 - Thế giới ngày qua" 
+            android:textColor="@color/white"
+            android:textSize="20dip"/>
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline">
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <!-- Line 2 -->
+
+    <RelativeLayout
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line1">
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="06:30 - Chào ngày mới "
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- Line 3 -->
+
+    <RelativeLayout
+        android:id="@+id/line3"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line2">
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="07:00 - CTTN: Liên hoan xiếc ..."
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <!-- Line 4 -->
+
+    <RelativeLayout
+        android:id="@+id/line4"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line3">
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="07:30 - Tạp chí bóng đá thế g..."
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <!-- Line 5 -->
+
+    <RelativeLayout
+        android:id="@+id/line5"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line4">
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="08:00 - DLVQTG: Nauy "
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <!-- Line 6 -->
+
+    <RelativeLayout
+        android:id="@+id/line6"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line5">
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="08:30 - Tạp chí VHNT thế giới "
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <!-- Line 7 -->
+
+    <RelativeLayout
+        android:id="@+id/line7"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line6">
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="08:55 - Tạp chí giáo dục "
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+    
+	<!-- Line 8 -->
+
+    <RelativeLayout
+        android:id="@+id/line8"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line7">
+
+        <TextView
+            android:id="@+id/tvStationName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="09:55 - Khoa học và đơi sông"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/spaceline" >
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
