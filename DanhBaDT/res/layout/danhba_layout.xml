@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tvArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="37dp"
+        android:text="TP Hồ Chí Minh"
+        android:textSize="18dip"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editPhoneNum"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="95dp"
+        android:inputType="number"
+        android:text="385685575"
+        android:textSize="15dip" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dip"
+        android:text="Đang lấy dữ liệu từ máy chủ..."
+        android:textColor="@color/date" />
+
+</RelativeLayout>
