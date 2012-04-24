@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#ffffff</color>
+	<color name="black">#000000</color>
+	<color name="transparent">#00ffffff</color>
+	
+	<color name="date">#62a700</color>
+	<color name="templow">#47acfa</color>
+	<color name="temphigh">#fc6836</color>
+	<color name="updateinfo">#d0c000</color>
+	
+	<!-- Pop up choose area : prefix - parea -->
+	<color name="parea_header_bg">#324059</color>
+	<color name="parea_body_bg">#374358</color>
+</resources>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:background="@drawable/bg_dem">
+
+	<TextView
+	    android:id="@+id/tvAreaName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="60dp"
+	    android:layout_marginTop="23dp"
+	    android:text="An Giang" 
+	    android:textColor="@color/white"
+	    android:textStyle="bold"
+	    android:textSize="30dp"/>
+
+	<!-- Weather to day -->
+	<RelativeLayout 
+	    android:id="@+id/rlToday"
+	    android:layout_width="300dp"
+	    android:layout_height="450dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true">	    
+		<RelativeLayout
+		    android:id="@+id/rlTodaybg"
+		    android:layout_width="264dp"
+		    android:layout_height="364dp"
+		    android:layout_alignParentTop="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginTop="102dp"
+		    android:layout_marginLeft="56dp"
+		    android:background="@drawable/layer_current" >
+		</RelativeLayout>
+		
+		<RelativeLayout
+            android:id="@+id/rlDay"
+            android:layout_width="264dp"
+            android:layout_height="404dp"
+            android:layout_alignParentTop="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginTop="62dp"
+		    android:layout_marginLeft="56dp">
+            
+			<!-- Day 1 -->
+			<ImageView
+			    android:id="@+id/imgDay1"
+			    android:layout_width="85dip"
+			    android:layout_height="85dip"
+			    android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"
+			    android:layout_marginRight="84dp"
+			    android:scaleType="fitXY"
+			    android:src="@drawable/sun" />
+		
+			<TextView
+			    android:id="@+id/tvTemp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:layout_alignParentTop="true"
+			    android:layout_marginTop="100dp"
+			    android:textSize="50dp"
+			    android:textColor="@color/white"
+			    android:text="22 °C" 
+			    android:textStyle="bold"/>
+		
+			<TextView
+			    android:id="@+id/tvWeather"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:layout_below="@+id/tvTemp"
+			    android:singleLine="true"
+			    android:layout_marginTop="5dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginLeft="10dp"
+			    android:text="Ít mây, trời nắng"
+			    android:textColor="@color/white"
+			    android:textSize="26dip" />
+		
+			<TextView
+			    android:id="@+id/tvDoAm"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:layout_below="@+id/tvWeather"
+			    android:singleLine="true"
+			    android:layout_marginTop="5dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginLeft="10dp"
+			    android:text="Độ ẩm 89 %"
+			    android:textColor="@color/white"
+			    android:textSize="26dip" />
+		
+			<TextView
+			    android:id="@+id/tvHuongGio1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:layout_below="@+id/tvDoAm"
+			    android:singleLine="true"
+			    android:layout_marginTop="5dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginLeft="10dp"
+			    android:text="Gió đông đông nam"
+			    android:textColor="@color/white"
+			    android:textSize="26dip"/>
+			
+			<TextView
+			    android:id="@+id/tvHuongGio2"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:layout_below="@+id/tvHuongGio1"
+			    android:singleLine="true"
+			    android:layout_marginTop="5dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginLeft="10dp"
+			    android:text="tốc độ: 5 m/s"
+			    android:textColor="@color/white"
+			    android:textSize="26dip"/>
+		
+        </RelativeLayout>
+	</RelativeLayout>
+	
+	<!-- Weather 3 day next -->
+	<RelativeLayout
+        android:id="@+id/rlToday"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl3DaynextBg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/layer3days" >
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rlDay1"
+            android:layout_width="380dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentLeft="true">
+            
+			<!-- Day 1 -->
+			<ImageView
+			    android:id="@+id/imgDay1"
+			    android:layout_width="85dip"
+			    android:layout_height="85dip"
+			    android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"
+			    android:layout_marginRight="24dp"
+			    android:scaleType="fitXY"
+			    android:src="@drawable/sun" />
+		
+			<TextView
+			    android:id="@+id/tvDate1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"
+			    android:layout_marginTop="50dp"
+			    android:layout_marginLeft="30dp"
+			    android:text="Thứ Ba, 21/12/2010" 
+			    android:textColor="@color/date"
+			    android:textSize="26dip"/>
+		
+			<TextView
+			    android:id="@+id/tvDescription1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignLeft="@+id/tvDate1"
+			    android:layout_below="@+id/tvDate1"
+			    android:singleLine="true"
+			    android:layout_marginRight="18dp"
+			    android:layout_marginTop="5dp"
+			    android:text="ít mây, trời nắng, gió nhẹ, độ ẩm "
+			    android:textColor="@color/white"
+			    android:textSize="26dip" />
+		
+			<TextView
+			    android:id="@+id/tvTempLow1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/tvDescription1"
+			    android:layout_alignParentLeft="true"
+			    android:layout_marginLeft="25dip"
+			    android:layout_marginTop="0dp"
+			    android:text="22 °C" 
+			    android:textColor="@color/templow"
+			    android:textSize="52dip"
+			    android:textStyle="bold"/>
+		
+			<TextView
+			    android:id="@+id/tvTempSpace1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBottom="@+id/tvTempLow1"
+			    android:layout_alignParentLeft="true"
+			    android:layout_marginLeft="167dip"
+			    android:text="~"
+			    android:textColor="@color/white"
+			    android:textStyle="bold" 
+			    android:textSize="52dip"/>
+		
+			<TextView
+			    android:id="@+id/tvTempHigh1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBottom="@+id/tvTempLow1"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginRight="30dip"
+			    android:text="32 °C"
+			    android:textColor="@color/temphigh"
+			    android:textStyle="bold"
+			    android:textSize="52dip" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rlDay2"
+            android:layout_width="380dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true">
+			
+			<!-- Day 2 -->
+			<ImageView
+			    android:id="@+id/imgDay2"
+			    android:layout_width="85dip"
+			    android:layout_height="85dip"
+			    android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"
+			    android:layout_marginRight="24dp"
+			    android:scaleType="fitXY"
+			    android:src="@drawable/sun" />
+
+			<TextView
+			    android:id="@+id/tvDate2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"
+			    android:layout_marginTop="50dp"
+			    android:layout_marginLeft="30dp"
+			    android:text="Thứ Tư, 22/12/2010" 
+			    android:textColor="@color/date"
+			    android:textSize="26dip"/>
+		
+			<TextView
+			    android:id="@+id/tvDescription2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignLeft="@+id/tvDate2"
+			    android:layout_below="@+id/tvDate2"
+			    android:singleLine="true"
+			    android:layout_marginRight="18dip"
+			    android:layout_marginTop="5dp"
+			    android:text="mây thay đổi, trời nắng, lặng gió,"
+			    android:textColor="@color/white"
+			    android:textSize="26dip" />
+		
+			<TextView
+			    android:id="@+id/tvTempLow2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/tvDescription2"
+			    android:layout_alignParentLeft="true"
+			    android:layout_marginLeft="25dip"
+			    android:layout_marginTop="0dp"
+			    android:text="24 °C" 
+			    android:textColor="@color/templow"
+			    android:textSize="52dip"
+			    android:textStyle="bold"/>
+		
+			<TextView
+			    android:id="@+id/tvTempSpace2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBottom="@+id/tvTempLow2"
+			    android:layout_alignParentLeft="true"
+			    android:layout_marginLeft="167dip"
+			    android:text="~"
+			    android:textColor="@color/white"
+			    android:textStyle="bold" 
+			    android:textSize="52dip"/>
+
+			<TextView
+			    android:id="@+id/tvTempHigh2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBottom="@+id/tvTempLow2"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginRight="30dip"
+			    android:text="32 °C"
+			    android:textColor="@color/temphigh"
+			    android:textStyle="bold"
+			    android:textSize="52dip" />            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rlDay3"
+            android:layout_width="380dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp">
+			
+			<!-- Day 3 -->
+			<ImageView
+			    android:id="@+id/imgDay3"
+			    android:layout_width="85dip"
+			    android:layout_height="85dip"
+			    android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"
+			    android:layout_marginRight="24dp"
+			    android:scaleType="fitXY"
+			    android:src="@drawable/sun" />
+		
+			<TextView
+			    android:id="@+id/tvDate3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"
+			    android:layout_marginTop="50dp"
+			    android:layout_marginLeft="30dp"
+			    android:text="Thứ Năm, 23/12/2010" 
+			    android:textColor="@color/date"
+			    android:textSize="26dip"/>
+		
+			<TextView
+			    android:id="@+id/tvDescription3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignLeft="@+id/tvDate3"
+			    android:layout_below="@+id/tvDate3"
+			    android:singleLine="true"
+			    android:layout_marginRight="18dip"
+			    android:layout_marginTop="5dp"
+			    android:text="mây thay đổi, trời nắng, lặng gió,"
+			    android:textColor="@color/white"
+			    android:textSize="26dip" />
+		
+			<TextView
+			    android:id="@+id/tvTempLow3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/tvDescription3"
+			    android:layout_alignParentLeft="true"
+			    android:layout_marginLeft="30dip"
+			    android:layout_marginTop="0dp"
+			    android:text="24 °C" 
+			    android:textColor="@color/templow"
+			    android:textSize="52dip"
+			    android:textStyle="bold"/>
+		
+			<TextView
+			    android:id="@+id/tvTempSpace3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBottom="@+id/tvTempLow3"
+			    android:layout_alignParentLeft="true"
+			    android:layout_marginLeft="177dip"
+			    android:text="~"
+			    android:textColor="@color/white"
+			    android:textStyle="bold" 
+			    android:textSize="52dip"/>
+
+			<TextView
+			    android:id="@+id/tvTempHigh3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBottom="@+id/tvTempLow3"
+			    android:layout_alignParentRight="true"
+			    android:layout_marginRight="20dip"
+			    android:text="32 °C"
+			    android:textColor="@color/temphigh"
+			    android:textStyle="bold"
+			    android:textSize="52dip" />      
+		
+		</RelativeLayout>
+    </RelativeLayout>
+	
+	
+	
+	
+	<!-- Update info  -->
+	<TextView
+	    android:id="@+id/tvUpdateInfo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:text="Cập nhật lúc: 21/12/2010 - 05:19:22" 
+	    android:textColor="@color/updateinfo"
+	    android:textSize="16dip"/>
+
+	<SlidingDrawer
+	    android:id="@+id/slidingDrawer1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignLeft="@+id/tvUpdateInfo"
+	    android:layout_below="@+id/tvAreaName"
+	    android:content="@+id/content"
+	    android:handle="@+id/handle" >
+
+	    <Button
+	        android:id="@+id/handle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Handle" />
+
+	    <LinearLayout
+	        android:id="@+id/content"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+	    </LinearLayout>
+	</SlidingDrawer>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/parea_body_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:id="@+id/header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip" 
+        android:background="@color/parea_header_bg">
+        <TextView
+            android:id="@+id/tvAreaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/parea_header"
+            android:textColor="@color/white"
+            android:textSize="20dip"
+            android:textStyle="bold" 
+            android:layout_centerInParent="true">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/viewBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dip" 
+        android:background="@color/parea_body_bg"
+        android:layout_below="@+id/header">
+
+        <ScrollView
+            android:id="@+id/lvData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+			android:background="@color/parea_body_bg"
+            android:paddingLeft="1dip"
+            android:paddingRight="1dip"
+            android:paddingTop="1dip" >
+
+            <LinearLayout
+                android:id="@+id/lnData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
